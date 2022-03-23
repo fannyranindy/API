@@ -1,0 +1,428 @@
+{
+	"id": "f42c6c7e-3ad0-4801-8c74-ce7ab2f5c836",
+	"name": "New Collection",
+	"timestamp": "2022-03-23T12:44:26.110Z",
+	"collection_id": "20086565-33123c4d-4bbe-4542-b2f3-75ffbf7304c7",
+	"folder_id": 0,
+	"environment_id": "20086565-6ee80efb-27d0-40a3-b0c3-72a6820d7452",
+	"totalPass": 3,
+	"totalFail": 2,
+	"results": [
+		{
+			"id": "bc03ea22-1130-49c6-b078-90d872fa190c",
+			"name": "Get Token Access",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/oauth/issueToken",
+			"time": 114,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				114
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b0afadb4-c5b8-48c5-a88e-ee61fa6559e9",
+			"name": "Get User",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/user",
+			"time": 40,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Verify Data": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Verify Data": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				40
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Verify Data": false
+				}
+			]
+		},
+		{
+			"id": "234a8899-61d2-4319-b6c7-a9caacef88bd",
+			"name": "User Login",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/login",
+			"time": 317,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				317
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b0dde9e7-ca7c-420a-a5fd-5ea95c774078",
+			"name": "Get Organization Info",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/organization",
+			"time": 48,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true,
+				"Verify Data": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify Data": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				48
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true,
+					"Verify Data": true
+				}
+			]
+		},
+		{
+			"id": "10646679-537f-4658-a581-986ba570edd9",
+			"name": "Punch In",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/1/punch-in",
+			"time": 55,
+			"responseCode": {
+				"code": 202,
+				"name": "Accepted"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				55
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6265190c-d908-4808-8474-c1495786573e",
+			"name": "Punch Out",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/1/punch-out",
+			"time": 63,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				63
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c32585c9-2bba-4328-8419-8e78ae7df15c",
+			"name": "Save Employee",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/1",
+			"time": 52,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				52
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "874a2f79-c6f8-48bf-aa46-c33d8f813bd9",
+			"name": "Employee Detail",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/120",
+			"time": 50,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				50
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6010a5e0-7224-4fdd-a920-9431b73d635f",
+			"name": "Update Employee Detail",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/120",
+			"time": 53,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				53
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "4d42cf7a-f56c-4084-be31-371b26eb3759",
+			"name": "Terminate Employement",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/120/action/terminate",
+			"time": 57,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				57
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "972afb81-552d-4953-9a32-c335d56ddc48",
+			"name": "Employee Search",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/search?name=Fanny",
+			"time": 65,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				65
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "237e5ea9-d485-49fa-ac5b-ea9ea6010a5e",
+			"name": "Employee Contact Detail",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/120/contact-detail",
+			"time": 51,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				51
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "7af8301e-2f3b-4cb9-9295-b016e249e3dc",
+			"name": "Save Employee Contact Detail",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/1/contact-detail",
+			"time": 71,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				71
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "db94f3e0-72e7-430f-bb2d-df5c129b6a26",
+			"name": "Update Employee Contact Detail",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/120/contact-detail",
+			"time": 66,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				66
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6f60be85-d431-45b7-b3fa-7b9aae85ea60",
+			"name": "Save Employee Dependent",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/120/dependent",
+			"time": 48,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				48
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "aae04593-23ac-4a2f-9474-aa82037076f0",
+			"name": "Update Employee Dependents",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/120/dependent",
+			"time": 43,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				43
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8ea7eb77-42d8-4a1a-a15a-b1695776cf41",
+			"name": "Employee Dependents",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/120/dependent",
+			"time": 43,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				43
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1236,
+	"collection": {
+		"requests": [
+			{
+				"id": "bc03ea22-1130-49c6-b078-90d872fa190c",
+				"method": "POST"
+			},
+			{
+				"id": "b0afadb4-c5b8-48c5-a88e-ee61fa6559e9",
+				"method": "GET"
+			},
+			{
+				"id": "234a8899-61d2-4319-b6c7-a9caacef88bd",
+				"method": "POST"
+			},
+			{
+				"id": "b0dde9e7-ca7c-420a-a5fd-5ea95c774078",
+				"method": "GET"
+			},
+			{
+				"id": "10646679-537f-4658-a581-986ba570edd9",
+				"method": "POST"
+			},
+			{
+				"id": "6265190c-d908-4808-8474-c1495786573e",
+				"method": "POST"
+			},
+			{
+				"id": "c32585c9-2bba-4328-8419-8e78ae7df15c",
+				"method": "POST"
+			},
+			{
+				"id": "874a2f79-c6f8-48bf-aa46-c33d8f813bd9",
+				"method": "GET"
+			},
+			{
+				"id": "6010a5e0-7224-4fdd-a920-9431b73d635f",
+				"method": "PUT"
+			},
+			{
+				"id": "4d42cf7a-f56c-4084-be31-371b26eb3759",
+				"method": "POST"
+			},
+			{
+				"id": "972afb81-552d-4953-9a32-c335d56ddc48",
+				"method": "GET"
+			},
+			{
+				"id": "237e5ea9-d485-49fa-ac5b-ea9ea6010a5e",
+				"method": "GET"
+			},
+			{
+				"id": "7af8301e-2f3b-4cb9-9295-b016e249e3dc",
+				"method": "POST"
+			},
+			{
+				"id": "db94f3e0-72e7-430f-bb2d-df5c129b6a26",
+				"method": "PUT"
+			},
+			{
+				"id": "6f60be85-d431-45b7-b3fa-7b9aae85ea60",
+				"method": "POST"
+			},
+			{
+				"id": "aae04593-23ac-4a2f-9474-aa82037076f0",
+				"method": "PUT"
+			},
+			{
+				"id": "8ea7eb77-42d8-4a1a-a15a-b1695776cf41",
+				"method": "GET"
+			}
+		]
+	}
+}
